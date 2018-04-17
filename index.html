@@ -1,55 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Super Simple ServiceWorker</title>
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="header">
-    <div style="padding: 15px;"
->Service Worker Example</div>
-    </div>
-    <div id="body_container">
-      <div id="body">
-        <div>
-          <img alt="minion1" src="./images/minion1.jpg"   style="  width: 200px;height: 200px;"/>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="two columns">
+          <a href="#">Good</a>
+          <span>Food</span>
         </div>
-        <div> <img alt="minion1" src="./images/minion1.jpg"   style="  width: 200px;height: 200px;"/></div>
-        <div> <img alt="minion1" src="./images/minion2.jpg"   style="  width: 200px;height: 200px;"/></div>
-        <div> <img alt="minion1" src="./images/minion3.jpg"   style="  width: 200px;height: 200px;"/></div>
-        <div> <img alt="minion1" src="./images/minion4.jpg"   style="  width: 200px;height: 200px;"/></div>
-        <div> <img alt="minion1" src="./images/minion5.jpg"   style="  width: 200px;height: 200px;"/></div>
-      </div>
-
-      <div id="footer">
-<p>All Css and and javascript is now cached as service worker is working as middle man</p>
-
+        <div class="ten columns">
+          <ul style="
+          margin-bottom: 0;
+      ">
+            <li>
+              <a href="#">Our Foods</a>
+            </li>
+            <li>
+              <a href="#">Top Rated</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    
+  </header>
 
-
+  <!---Main body -->
+  <div class="container middle_container">
+    <div class="row">
+      <div class="six columns">
+        <h2>Eat Fantastic Meal</h2>
+        <p style="padding: 11px;">This brings to amazing level of happiness .Because we care for your happiness</p>
+        <input style="width:50%" type="button" class="button-primary" value="Order"/>
+      </div>
+      <div class="six columns">
+        <img src="./images/plate.png" id="plate" />
+      </div>
+    </div>
   </div>
 
+  <div id="purple_container">
+    <div class="cut"></div>
+    <div class="container row" style="margin-top: 10px;">
+      <div class="six columns">
+        <img src="./images/donut.png" id="donut" />
+      </div>
+      <div class="six columns">
+        <h2>Food Genius</h2>
+        <p>I don't think it ever does any harm in any business to feel that there is someone there who cares about it. If you look at any business, fashion being the most obvious, the aura, or the reality of the designer, is part of what creates it. It's true in luxury goods stores and in good food stores. It leaves a palpable sense that someone cares
+            Read more at: https://www.brainyquote.com/topics/good_food</p>
+          
+      </div>
+    </div>
+  </div>
 
+  <div style="margin-top: -25px;background-color: brown;">
+    <div class="container row">
+      <div class="twelve columns">READY FOR SOME GOODEATS?</div>
 
-  <script src="script.js"></script>
-    <script>
-      // Let's register our serviceworker
-      navigator.serviceWorker.register('sw.js', {
-        // The scope cannot be parent to the script url
-        scope: './'
-      });
-    </script>
-    <script src="logging.js"></script>
+      <form>
+        <div class="one-third column">
+          <label for="select">Select Issue
+            <select id="select" class="u-full-width" style="
+            background: none;
+        ">
+              <option>First</option>
+              <option>Second</option>
+              <option>Third</option>
 
+            </select>
+          </label>
+        </div>
+        <div class="one-third column">
+          <label for="email">Your Email
+            <input type="text" id="email" class="u-full-width" style="background:none" />
+          </label>
+        </div>
+        <div class="one-third column">
+          <input style="margin-top: 24px;" type="button" class="button-primary" value="Order"/>
+          </div>
+  
+      </form>
+    </div>
+  </div>
 
-
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
 </html>
