@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Super Simple ServiceWorker</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+    <div style="padding: 15px;"
+>Service Worker Example</div>
+    </div>
+    <div id="body_container">
+      <div id="body">
+        <div>
+          <img alt="minion1" src="./images/minion1.jpg"   style="  width: 200px;height: 200px;"/>
+        </div>
+        <div> <img alt="minion1" src="./images/minion1.jpg"   style="  width: 200px;height: 200px;"/></div>
+        <div> <img alt="minion1" src="./images/minion2.jpg"   style="  width: 200px;height: 200px;"/></div>
+        <div> <img alt="minion1" src="./images/minion3.jpg"   style="  width: 200px;height: 200px;"/></div>
+        <div> <img alt="minion1" src="./images/minion4.jpg"   style="  width: 200px;height: 200px;"/></div>
+        <div> <img alt="minion1" src="./images/minion5.jpg"   style="  width: 200px;height: 200px;"/></div>
+      </div>
+
+      <div id="footer">
+<p>All Css and and javascript is now cached as service worker is working as middle man</p>
+
+      </div>
+    </div>
+    
+
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+    <script>
+      // Let's register our serviceworker
+      navigator.serviceWorker.register('sw.js', {
+        // The scope cannot be parent to the script url
+        scope: './'
+      });
+    </script>
+    <script src="logging.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: fonto;
+  src: url('./fonts/fofbb_reg.otf');
+}
+.header{
+
+    height: 50px;
+    background-color: #a7834c;
+    border-radius: 7px;
+    font-family: fonto;
+    width: 55%;
+    margin-left: 23%;
+}
+
+body{
+  background: url('./images/background.jpg') no-repeat center center fixed; 
+ 
+  height: 100%;
+}
+#body{
+  display: flex;
+  flex-direction: row;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+#body div{
+  
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+#footer{
+  height: 50px;
+  background-color: #a7834c;
+  border-radius: 7px;
+  font-family: fonto;
+  width: 55%;
+  margin-left: 23%;
+  position: fixed;
+  top: calc(100% - 53px);
+}
