@@ -7,4 +7,4 @@ npm install
 npm start
 ```
 
-![Screenshot](p1.png)
+![Screenshot](p1.PNG)
